@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form method="post" action="https://openkajibi.com">
+    <fieldset>
+            <legend>Vos coordonnées :</legend>
+        <p>
+            <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Ex: Poutou" autofocus required />
+        </p>
+        <p>
+            <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Ex: Philippe" required />
+        </p>
+        <p>
+            <label>Votre email</label> : <input type="email" name="email" id="email" placeholder="Ex: phiphi@outlook.fr" required />
+        </p>
+        <p>
+            <label>Votre numéro de téléphone</label> : <input type="text" name="telephone" id="telephone" placeholder="Ex: 0768754765" required />
+        </p>
+        <p>
+            <label>Votre âge et date de naissance</label> : <input type="number" placeholder="18" min="18" max="99" required />
+            <input type="date" required/>
+        </p>
+    </fieldset>
+    <fieldset>
+            <legend>Avez vous le permis ?</legend>
+        <input type="radio" name="permis" id="oui" /><label for="oui">Oui</label>
+        <input type="radio" name="permis" id="non" /><label for="non">Non</label>
+    </fieldset>
+    <fieldset>
+            <legend>Votre sexe :</legend>
+        <input type="checkbox" name="homme" id="homme" /><label for="homme">Homme</label><br />
+        <input type="checkbox" name="femme" id="femme" /><label for="femme">Femme</label><br />
+        <input type="checkbox" name="fomme" id="fomme" /><label for="fomme">Non binaire</label>
+    </fieldset>
+    <fieldset>
+            <legend>Dans quel pays habitez-vous ?</legend>
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+            </optgroup>
+            <optgroup label="Amérique du Nord">
+                <option value="etats-unis">Etats-unis</option>
+                <option value="canada">Canada</option>
+            </optgroup>
+            <optgroup label="Amérique du Sud">
+                <option value="bresil">Brésil</option>
+                <option value="argentine">Argentine</option>
+            </optgroup>
+                <option value="bresil" selected>Brésil</option>
+        </select>
+    </fieldset>
+    <fieldset>
+            <legend>Veuillez saisir un identifiant et mot de passe :</legend>
+        <p>
+            <label for="pseudo">Votre identifiant :</label>
+            <input type="text" name="pseudo" id="pseudo" />
+        </p>
+        <p>
+            <label for="pass">Votre mot de passe :</label>
+            <input type="password" name="pass" id="pass" minlength="8" />
+        </p>
+    </fieldset>
+    <p>
+        <input type="reset" value="Réinitialiser ce formulaire" />
+    </p>
+    <p>
+        <input type="submit" value="Envoyer via un boutton beaucoup trop long" />
+    </p>
+    </form>
+</body>
+</html>
